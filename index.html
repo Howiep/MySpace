@@ -6,7 +6,9 @@
   <meta name="description" content="Description">
   <meta name="keywords" content="Words, words, words">
 
-  <link href="https://fonts.googleapis.com/css?family=Copse|Lora:400,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto+Condensed:400,700" rel="stylesheet">
 
   <link rel="stylesheet" href="content/css/bootstrap.css">
   <link rel="stylesheet" href="content/css/main.css">
@@ -72,103 +74,50 @@
             <li><a href="#">Kontakt</a></li>
           </ul>
         </li>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+          </li>
+        </ul>
       </ul>
     </nav>
-    <!-- banner -->
-    <div class="banner">
-      <img src="content/img/mdsb1.png" alt="">
-    </div>
-    <!-- landing -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-8 col-md-8">
-          <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#bs-carousel" data-slide-to="1"></li>
-              <li data-target="#bs-carousel" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item slides active">
-                <div class="slide-1"></div>
-                <div class="hero">
-                  <hgroup>
-                    <h1>We are creative</h1>
-                    <h3>Get start your next awesome project</h3>
-                  </hgroup>
-                  <button class="btn btn-primary btn-lg" role="button">See all features</button>
-                </div>
-              </div>
-              <div class="item slides">
-                <div class="slide-2"></div>
-                <div class="hero">
-                  <hgroup>
-                    <h1>We are smart</h1>
-                    <h3>Get start your next awesome project</h3>
-                  </hgroup>
-                  <button class="btn btn-primary btn-lg" role="button">See all features</button>
-                </div>
-              </div>
-              <div class="item slides">
-                <div class="slide-3"></div>
-                <div class="hero">
-                  <hgroup>
-                    <h1>We are amazing</h1>
-                    <h3>Get start your next awesome project</h3>
-                  </hgroup>
-                  <button class="btn btn-primary btn-lg" role="button">See all features</button>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!--desktop navbar -->
+    <div class="container-fluid navbar navbar-inverse hidden-sm hidden-xs">
+      <form class="navbar-form navbar-right hidden-md">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Søg">
         </div>
-        <!-- <div class="col-lg-2 col-md-2">
-          <div class="panel panel-success">
-            <div class="panel-heading">
-              <h3 class="panel-title">
-                          <span class="glyphicon glyphicon-envelope"></span>  Tilmeld dig vores nyhedsbrev
-                      </h3>
-            </div>
-            <div class="panel-body">
-              <div class="media">
-                <div class="media-body">
-                  <form>
-                    <div class="form-group">
-                      <label for="newsletter-name" class="hidden">Name</label>
-                      <input type="name" class="form-control" id="newsletter-name" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                      <label for="newsletter-email" class="hidden">Email address</label>
-                      <input type="email" class="form-control" id="newsletter-email" placeholder="Email">
-                    </div>
-                    <button type="submit" class="btn btn-default btn-block btn-success">Submit</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </div>
-    <!-- newsletter -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 text-right newsletter">
-          <h2>Tilmeld dig vores nyhedsbrev!</h2>
-        </div>
-        <div class="col-lg-6 col-md-6 newsletter">
-          <form class="navbar-form" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Email">
-            </div>
-            <button type="Tilmeld" class="btn btn-success">Submit</button>
-          </form>
-        </div>
-      </div>
+        <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+        </li>
+      </ul>
     </div>
     <!-- Page Content -->
     <div id="page-content-wrapper">
@@ -176,7 +125,98 @@
               <span class="hamb-top"></span>
               <span class="hamb-middle"></span>
               <span class="hamb-bottom"></span>
-            </button>
+      </button>
+
+      <div class="logo">
+        <a href="#">
+          <img src="content/img/mds.svg" alt="">
+        </a>
+      </div>
+
+      <!-- landing article -->
+      <div class="container-fluid">
+        <div class="row">
+          <a href="" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 landing" style="background-image: url(http://lorempixel.com/1920/1080/people/)">
+            <div class="landingInfo">
+              <div>
+                <p>Kategori</p>
+                <h2>This person has done something worth talking about</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- recent -->
+      <div class="container">
+        <div class="row">
+          <div class="page-header text-center">
+            <h2 class="title">Seneste</h2>
+          </div>
+          <article class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="topic">
+              <a href="#">Kategori</a>|
+              <span>Author Name</span>|
+              <span>12 Maj 2017</span>
+            </div>
+            <div class="media-object">
+              <a href="#">
+                <img class="img-responsive" src="http://lorempixel.com/400/200/" alt="">
+              </a>
+              <h2 class="item-title">
+                <a href="#">
+                  Podcasts på engelsk til dig, der vil bide negle af spænding eller lære nyt
+                </a>
+              </h2>
+              <p class="item-desc">
+                <a href="#">
+                  Er du vild med podcasts? Ellers bliver du det formentlig snart! Her er vores anbefalinger af podcasts på engelsk – der er noget til enhver smag.
+                </a>
+              </p>
+              <p class="item-cta">
+                <a href="#">
+                  Læs mere
+                </a>
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+      <!-- newsletter -->
+      <div class="container-fluid newsletter">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 text-right">
+            <h2>Tilmeld dig vores nyhedsbrev!</h2>
+          </div>
+          <div class="col-lg-6 col-md-6 newsletter">
+            <form class="navbar-form" role="button">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email">
+              </div>
+              <button type="Tilmeld" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h1>Minimalist design with a simple and harmonic color palette.</h1>
+            <p>Bacon ipsum dolor sit amet tri-tip shoulder tenderloin shankle. Bresaola tail pancetta ball tip doner meatloaf corned beef. Kevin pastrami tri-tip prosciutto ham hock pork belly bacon pork loin salami pork chop shank corned beef tenderloin
+              meatball cow. Pork bresaola meatloaf tongue, landjaeger tail andouille strip steak tenderloin sausage chicken tri-tip. Pastrami tri-tip kielbasa sausage porchetta pig sirloin boudin rump meatball andouille chuck tenderloin biltong shank
+            </p>
+            <p>Pig meatloaf bresaola, spare ribs venison short loin rump pork loin drumstick jowl meatball brisket. Landjaeger chicken fatback pork loin doner sirloin cow short ribs hamburger shoulder salami pastrami. Pork swine beef ribs t-bone flank filet
+              mignon, ground round tongue. Tri-tip cow turducken shank beef shoulder bresaola tongue flank leberkas ball tip.</p>
+            <p>Filet mignon brisket pancetta fatback short ribs short loin prosciutto jowl turducken biltong kevin pork chop pork beef ribs bresaola. Tongue beef ribs pastrami boudin. Chicken bresaola kielbasa strip steak biltong. Corned beef pork loin cow
+              pig short ribs boudin bacon pork belly chicken andouille. Filet mignon flank turkey tongue. Turkey ball tip kielbasa pastrami flank tri-tip t-bone kevin landjaeger capicola tail fatback pork loin beef jerky.</p>
+            <p>Chicken ham hock shankle, strip steak ground round meatball pork belly jowl pancetta sausage spare ribs. Pork loin cow salami pork belly. Tri-tip pork loin sausage jerky prosciutto t-bone bresaola frankfurter sirloin pork chop ribeye corned
+              beef chuck. Short loin hamburger tenderloin, landjaeger venison porchetta strip steak turducken pancetta beef cow leberkas sausage beef ribs. Shoulder ham jerky kielbasa. Pig doner short loin pork chop. Short ribs frankfurter rump meatloaf.</p>
+            <p>Filet mignon biltong chuck pork belly, corned beef ground round ribeye short loin rump swine. Hamburger drumstick turkey, shank rump biltong pork loin jowl sausage chicken. Rump pork belly fatback ball tip swine doner pig. Salami jerky cow,
+              boudin pork chop sausage tongue andouille turkey.</p>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2">
