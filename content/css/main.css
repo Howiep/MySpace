@@ -12,7 +12,9 @@ h1, h2, h3, h4, h5 {
     font-family: 'Eczar', serif;
     font-weight: 600;
 }
-
+.container{
+  width: 940px;
+}
 .navbar {
     z-index: 15;
     position: fixed;
@@ -25,7 +27,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar-nav>li>a {
-    font-family: 'Eczar', serif;
     font-weight: 700;
 }
 
@@ -42,12 +43,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .sidebar-nav li a {
-    font-family: 'Eczar', serif;
     font-weight: 700;
 }
 
 .dropdown-menu>li>a {
-    font-family: 'Eczar', serif;
     font-weight: 600;
 }
 
@@ -74,44 +73,17 @@ h1, h2, h3, h4, h5 {
 }
 
 .landing {
-    min-height: 90vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-
-.landingInfo {
-    height: 100%;
-    background: rgba(19, 19, 19, 0.3);
-}
-
-.landingInfo>div {
-    position: absolute;
-    top: 10rem;
-    padding: 20px;
-    text-shadow: 1px 1px 2px rgba(30, 30, 30, 0.8);}
-
-.landingInfo p {
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.8rem;
-}
-
-.landingInfo h2 {
-    color: #ffffff;
-    font-size: 5rem;
-}
 .landing-logo img{
   max-height: 30rem;
+  padding: 2rem;
 }
 
-
 /* ------------------------------- */
-
-
 /* Wrappers */
-
-
 /* ------------------------------- */
 
 #wrapper {
