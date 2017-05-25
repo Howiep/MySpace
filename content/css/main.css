@@ -1,7 +1,7 @@
 body {
     position: relative;
     overflow-x: hidden;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
@@ -9,12 +9,11 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Eczar', serif;
-    font-weight: 600;
+  margin-top: 0;
+  font-family: 'Proza Libre', sans-serif;
+  font-weight: 600;
 }
-.container{
-  width: 940px;
-}
+
 .navbar {
     z-index: 15;
     position: fixed;
@@ -23,11 +22,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 0;
     border: 0;
     border-radius: 0;
-    background-color: #f4f5f6;
-}
-
-.navbar-nav>li>a {
-    font-weight: 700;
+    background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -43,11 +38,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .sidebar-nav li a {
-    font-weight: 700;
+    text-align: center;
+    color: #333333;
 }
 
 .dropdown-menu>li>a {
-    font-weight: 600;
+    color: #ffffff;
+}
+.dropdown-menu>li>a:hover {
+    color: #ececec;
 }
 
 .desktopNav {
@@ -60,30 +59,18 @@ h1, h2, h3, h4, h5 {
     max-height: 75px;
 }
 
-.newsletter {}
-
-.newsletter form {
-    margin: 20px;
-}
-
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
     vertical-align: top;
 }
 
-.landing {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.landing-logo img{
-  max-height: 30rem;
-  padding: 2rem;
-}
-
 /* ------------------------------- */
+
+
 /* Wrappers */
+
+
 /* ------------------------------- */
 
 #wrapper {
@@ -106,7 +93,7 @@ h1, h2, h3, h4, h5 {
     margin-left: -270px;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #f4f5f6;
+    background-color: transparent;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -152,7 +139,6 @@ h1, h2, h3, h4, h5 {
     display: inline-block;
     position: relative;
     width: 100%;
-    font-weight: 700;
     line-height: 20px;
 }
 
@@ -164,7 +150,6 @@ h1, h2, h3, h4, h5 {
     left: 0;
     width: 3px;
     height: 100%;
-    background-color: #1c1c1c;
     -moz-transition: width .2s ease-in;
     -ms-transition: width .2s ease-in;
     -webkit-transition: width .2s ease-in;
@@ -173,17 +158,19 @@ h1, h2, h3, h4, h5 {
 
 .sidebar-nav li a {
     display: block;
-    padding: 10px 15px 10px 30px;
-    color: #333333;
+    padding: 1.5rem;
     text-decoration: none;
 }
 
 .sidebar-nav .dropdown ul {
-    padding-left: 20px;
+    padding: 0 2rem 0 2rem;
+}
+
+.sidebar-nav .dropdown ul li {
+    background-color: #333333;
 }
 
 .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus, .sidebar-nav li.open a:hover, .sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li a:hover {
-    color: #fff;
     background-color: transparent;
     text-decoration: none;
 }
@@ -193,8 +180,9 @@ h1, h2, h3, h4, h5 {
     font-size: 20px;
     line-height: 44px;
 }
+
 .sidebar-nav>.sidebar-brand a {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 .sidebar-nav>.sidebar-brand img {
@@ -208,10 +196,11 @@ h1, h2, h3, h4, h5 {
     padding: 0;
     border: none;
     border-radius: 0;
-    background-color: #f4f5f6;
     box-shadow: none;
 }
-
+.navbar-form{
+  margin: 1rem;
+}
 
 /* ------------------------------- */
 
@@ -221,7 +210,9 @@ h1, h2, h3, h4, h5 {
 
 /* ------------------------------- */
 
-.socials {}
+.socials {
+    padding: 2rem;
+}
 
 .nav-social {}
 
@@ -376,7 +367,44 @@ h1, h2, h3, h4, h5 {
     height: 100%;
     background-color: rgba(250, 250, 250, .8);
 }
+/* ****************** */
 
+
+/* landing area */
+
+
+/* ****************** */
+.recent{
+  padding: 5rem 0 5rem 0;
+}
+.recent-article{
+  height: 30rem;
+}
+.recent-article a{
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.recent-article-desc{
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.4);
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  margin-left: -15px;
+  color: #ffffff;
+  transition: 1.5s ease;
+}
+.recent-article-desc .rabtn i{
+  font-size: 1rem;
+}
+.recent-article-desc p{
+  display: none;
+}
+.showP{
+  background-color: #7E4547;
+}
 
 /* ****************** */
 
@@ -385,15 +413,6 @@ h1, h2, h3, h4, h5 {
 
 
 /* ****************** */
-
-.recent {
-    background-color: #f4f5f6;
-}
-
-.recent>div {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
 
 .items>article:hover {
     -webkit-filter: brightness(80%);
@@ -465,6 +484,7 @@ h1, h2, h3, h4, h5 {
 
 /* ****************** */
 
+
 /* ****************** */
 
 
@@ -476,32 +496,9 @@ h1, h2, h3, h4, h5 {
 @media screen and (min-width: 980px) {}
 
 @media screen and (max-width: 980px) {
-    .newsletter, .newsletter h2 {
-        text-align: center;
-    }
+
 }
 
 @media screen and (max-width: 640px) {
-    .newsletter h2 {
-        text-align: center;
-        font-size: 1.8rem;
-    }
-    .newsletter form {
-        margin: 0;
-    }
-    .newsletter button {
-        width: 100%;
-    }
-    .landing {
-        min-height: 60vh;
-    }
-    .landingInfo p {
-        font-size: 1rem;
-    }
-    .landingInfo h2 {
-        font-size: 2.5rem;
-    }
-    .logo img {
-        max-height: 50px;
-    }
+
 }

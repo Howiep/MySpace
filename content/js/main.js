@@ -29,4 +29,21 @@ $(document).ready(function() {
     $('[data-toggle="offcanvas"]').click(function() {
         $('#wrapper').toggleClass('toggled');
     });
+
+    // Add slideDown animation to Bootstrap dropdown when expanding.
+    $('.dropdown').on('show.bs.dropdown', function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+
+    // Add slideUp animation to Bootstrap dropdown when collapsing.
+    $('.dropdown').on('hide.bs.dropdown', function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+    });
+
+    $('.recent-toggle').hover(function(){
+      $(this).find('p').slideToggle();
+      $(this).find('.recent-article-desc').toggleClass('showP');
+      console.log('points')
+    })
+
 });
