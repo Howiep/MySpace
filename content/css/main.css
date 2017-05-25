@@ -3,6 +3,9 @@ body {
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
+body, html{
+  font-size: 10px;
+}
 
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     background-color: transparent;
@@ -356,6 +359,7 @@ h1, h2, h3, h4, h5 {
 /* ------------------------------- */
 
 .overlay {
+
     z-index: 1;
     display: none;
     position: fixed;
@@ -374,17 +378,33 @@ h1, h2, h3, h4, h5 {
 
 
 /* ****************** */
+.landing{
+  padding: 10rem 0 5rem 0;
+}
+.landing .media-object a{
+  height: 400px;
+}
+
+/* ****************** */
+
+
+/* recent articles */
+
+
+/* ****************** */
+
 .recent{
   padding: 5rem 0 5rem 0;
 }
 .recent-article{
-  height: 30rem;
+  height: 35rem;
 }
 .recent-article a{
   height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 0;
 }
 .recent-article-desc{
   width: 100%;
@@ -392,7 +412,6 @@ h1, h2, h3, h4, h5 {
   position: absolute;
   bottom: 0;
   padding: 2rem;
-  margin-left: -15px;
   color: #ffffff;
   transition: 1.5s ease;
 }
@@ -403,16 +422,8 @@ h1, h2, h3, h4, h5 {
   display: none;
 }
 .showP{
-  background-color: #7E4547;
+  background-color: #FE8B8E;
 }
-
-/* ****************** */
-
-
-/* recent articles */
-
-
-/* ****************** */
 
 .items>article:hover {
     -webkit-filter: brightness(80%);
@@ -450,7 +461,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .item-title a:hover {
-    color: #73B184;
+    color: #FE8B8E;
 }
 
 .item-desc {}
@@ -462,7 +473,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .item-desc a:hover {
-    color: #73B184;
+    color: #FE8B8E;
 }
 
 .item-cta {
@@ -471,7 +482,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .item-cta a {
-    color: #73B184;
+    color: #FE8B8E;
     text-decoration: none;
 }
 
