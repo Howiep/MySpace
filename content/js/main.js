@@ -1,6 +1,7 @@
-// $('.dropdown').hover(function(){
-//   $('.dropdown-toggle', this).trigger('click');
-// });
+//Jquery code
+ $('.ddfb').hover(function(){
+   $('.ddfb-tgl', this).trigger('click');
+ });
 
 $(document).ready(function() {
     var trigger = $('.hamburger'),
@@ -40,10 +41,36 @@ $(document).ready(function() {
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
 
-    $('.recent-toggle').hover(function(){
-      $(this).find('p').slideToggle();
-      $(this).find('.recent-article-desc').toggleClass('showP');
-      console.log('points')
+    $('.featured-toggle').hover(function() {
+        $(this).find('p').stop().slideToggle();
+        $(this).find('.featured-article-desc').toggleClass('showP');
+    })
+
+
+    $('.pull-down').each(function() {
+        var $this = $(this);
+        $this.css('margin-top', $this.parent().height() - $this.height())
+    });
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 2,
+                nav: false
+            },
+            1000: {
+                items: 3,
+                nav: true,
+                loop: false
+            }
+        }
     })
 
 });
