@@ -11,7 +11,7 @@
    version="1.1"
    id="svg4497"
    sodipodi:docname="mds.svg"
-   inkscape:version="0.92.1 r15371">
+   inkscape:version="0.91 r13725">
   <metadata
      id="metadata4503">
     <rdf:RDF>
@@ -34,21 +34,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1680"
-     inkscape:window-height="997"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
      id="namedview4499"
      showgrid="false"
      inkscape:zoom="2.8284271"
      inkscape:cx="168.73896"
      inkscape:cy="5.4052947"
-     inkscape:window-x="1272"
-     inkscape:window-y="1018"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4497" />
-  <path
-     fill="#FAD6D7"
-     d="M23.7 47.3c13 0 23.6-10.6 23.6-23.6C47.3 10.7 36.7.1 23.7.1 10.7.1.1 10.7.1 23.7c0 13 10.6 23.6 23.6 23.6z"
-     id="path4485" />
   <path
      fill="none"
      stroke="#000"

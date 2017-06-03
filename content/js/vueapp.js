@@ -1,16 +1,18 @@
+
 //Vue code
 Vue.prototype.$http = axios;
 
 var app = new Vue({
     el: '#app',
     data: {
-        message: 'Hello Vue!',
+        title: 'Seneste',
         posts: []
     },
-    mounted: function() {
+    mounted: 
+    function() {
         this.$http.get("https://jsonplaceholder.typicode.com/posts").then(function(res) {
             console.log(this);
-            this.posts = _.slice(res.data, 0, 12);
+            this.posts = _.slice(res.data, 0, 6);
         }.bind(this))
     },
     methods: {
@@ -18,12 +20,6 @@ var app = new Vue({
             this.$http.get("https://jsonplaceholder.typicode.com/posts").then(function(res) {
                 console.log(this);
                 this.posts = _.slice(res.data, 0, 3);
-            }.bind(this))
-        },
-        get48: function() {
-            this.$http.get("https://jsonplaceholder.typicode.com/posts").then(function(res) {
-                console.log(this);
-                this.posts = _.slice(res.data, 0, 48);
             }.bind(this))
         }
     }
