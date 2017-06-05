@@ -11,13 +11,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:400,500" rel="stylesheet">
 
-    <link rel="stylesheet" href="content/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="content/css/owl.theme.default.min.css">
-
     <link rel="stylesheet" href="content/css/bootstrap.css">
     <link rel="stylesheet" href="content/css/main.css">
+    <link rel="stylesheet" href="content/css/article.css">
 
-    <title>My Daily Space - Forside</title>
+    <title>My Daily Space - Artikel eksempel</title>
 </head>
 
 <body>
@@ -173,134 +171,75 @@
             <span class="hamb-bottom"></span>
           </button>
 
-            <div class="landing">
-                <div class="container">
-                    <div class="row">
-                        <article>
-                            <a href="#" class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="background-image: url(content/img/articles/3.jpeg)">
-                                <div class="landing-1-o"></div>
-                                <div class="landing-desc-p">
-                                    <h4>Nyheder</h4>
-                                    <h2>Danske butikker vil hjælpe dig af med dit brugte plastik</h2>
-                                </div>
-                            </a>
-                        </article>
-                        <article>
-                            <a href="#" class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="background-image: url(content/img/articles/4.jpeg)">
-                                <div class="landing-2-o"></div>
-                                <div class="landing-desc-p">
-                                    <h5>Mode</h5>
-                                    <h3>Danske butikker vil hjælpe dig af med dit brugte plastik</h3>
-                                </div>
-                            </a>
-                        </article>
-                        <article>
-                            <a href="#" class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="background-image: url(content/img/articles/6.jpeg)">
-                                <div class="landing-2-o"></div>
-                                <div class="landing-desc-p">
-                                    <h5>Rejser</h5>
-                                    <h3>Danske butikker vil hjælpe dig af med dit brugte plastik</h3>
-                                </div>
-                            </a>
-                        </article>
+            <!--CONTENT START-->
+            <div class="container story-wrapper">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
+                        <h1 class="">Her er din guide til årets festivaller</h1>
+                        <h3 class="page-title">Sommeren er over os og med den bringer den sig et væld af kulturelle tilbud i form af festivaler
+                            og udendørs aktiviteter.</h3>
                     </div>
+
+                    <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                        <div class=" main-storyimage">
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <p class="article-desc ">Af: <a>Carina Kjær Rasmussen.</a> Foto: <a>PR</a></p>
+
+                        <div class="article-body">
+                            <p>
+                                Her på redaktionen elsker vi festivaler og alt der kan laves udendørs når nu det danske sommervejr indbyder til aktiviteter
+                                udendørs. Især festivaler står højt på vores liste over yndlings beskæftigelser her i sommer
+                                månederen. Der er bare noget over den sanselige stemning en koncert under åben himmel, iklædt
+                                det nyeste boheme coachella outfit med støvede ben og det flettet hår.
+                            </p>
+                            <p>
+                                <a>Se også: De 9 største modetrends til din festival her!</a> Heldigvis har Danmark nogle
+                                af de bedste festivaler og de bedste programmer, så her plejer der næsten altid at være en
+                                festival til alle, lige meget smag.
+                            </p>
+                            <p> For hver festival har sin egen charme og personlighed ligesom vi hver især har, og dette er noget
+                                af det vi elsker ved festivaler.
+                            </p>
+                            <p>
+                                Vi giver dig her en guide over sommerens festivaler, i rækkefølge efter hvornår de finder sted, så du er sikker på du kan
+                                nå at planlægge din ferie efter lige præcis din ynglings festival.
+                            </p>
+                            <p>
+                                <ul>
+                                    <li><a>Nibe festival</a> </li>
+
+                                    <li><a>AaMaze</a></li>
+                                    <li><a>Roskilde</a></li>
+                                    <li><a>Northside</a></li>
+                                    <li><a>Tinderbox</a></li>
+                                    <li><a>Skive festival</a></li>
+                                    <li><a>Samsø festival</a></li>
+                                    <li><a>Jazz festival</a></li>
+                                    <li><a>Copenhagen Pride</a></li>
+                                    <li><a>Skanderborg festival</a></li>
+                                </ul>
+                            </p>
+                            <p>
+                                Hvis du er til festivaler og musik arrangementer har du her din sommer guide, mangler du nu tilfældigvis noget at tage på,
+                                giver vi dig også en guide til 7 festival outfits som oser af boheme og rock chick, se artiklen
+                                <a>på My daily Feathers.</a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
 
-            <div class="container">
-                <!-- recent -->
-                <div class="recent">
-                    <div id="app" class="row">
-                        <div class="text-center">
-                            <h2 class="page-title">{{title}}</h2>
-                        </div>
-                        <div>
-                            <article v-for="post in posts" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <div class="topic">
-                                    <a href="#">Nyheder</a>
-                                    <span class="pull-right">12 Maj 2017</span>
-                                </div>
-                                <a href="#">
-                                    <img class="img-responsive" src="content/img/articles/1.jpeg" alt="">
-                                </a>
-                                <div class="item-text">
-                                    <h2 class="item-title">
-                                        <a href="#">
-                                                      {{ post.title }}         
-                                                     </a>
-                                    </h2>
 
-                                    <p class="item-desc">
-                                        <a href="#">
-                                                    {{ post.body }}            
-                                                    </a>
-                                    </p>
-                                    <p class="item-cta">
-                                        <a href="#">Howie Bradberry</a>
-                                    </p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
+            <!--CONTENT END-->
 
-
-            </div>
-
-            <!-- featured -->
-
-            <div class="featured">
-                <div class="container-fluid">
-                    <div class="text-center">
-                        <h2 class="page-title">Denne uge</h2>
-                    </div>
-                    <div class="row">
-                        <div class="featured-article col-lg-12 col-md-12 col-ls-12 col-xs-12">
-                            <a class="featured-toggle col-lg-3 col-md-6 col-ls-12 col-xs-12" href="#" style="background-image: url('content/img/articles/2.jpeg')">
-                                <div class="featured-article-desc">
-                                    <h3>Instagrams vildeste niche-profiler</h3>
-                                    <p>Det kan sgu være anstrengende at gå i gang med sin daglige feed-runde blot for at indse,
-                                        at alle lægger de fucking samme, forudsigelige billeder op. Heldigvis betyder det
-                                        bare, at du følger de forkerte – og det kan der jo rådes bod på.
-                                    </p>
-                                    <p class="rabtn">læs mere <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </p>
-                                </div>
-                            </a>
-                            <a class="featured-toggle col-lg-3 col-md-6 col-ls-12 col-xs-12" href="#" style="background-image: url('content/img/articles/touch.jpeg')">
-                                <div class="featured-article-desc">
-                                    <h3>Tid til at rydde op i makeuppungen! Det skal du beholde, og det skal du smide ud
-                                    </h3>
-                                    <p>Det kan sgu være anstrengende at gå i gang med sin daglige feed-runde blot for at indse,
-                                        at alle lægger de fucking samme, forudsigelige billeder op. Heldigvis betyder det
-                                        bare, at du følger de forkerte – og det kan der jo rådes bod på.
-                                    </p>
-                                    <p class="rabtn">læs mere <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </p>
-                                </div>
-                            </a>
-                            <a class="featured-toggle col-lg-3 col-md-6 col-ls-12 col-xs-12" href="#" style="background-image: url('content/img/articles/7.jpeg')">
-                                <div class="featured-article-desc">
-                                    <h3>Dig og din mor: Hvordan har din mor påvirket din boligstil?</h3>
-                                    <p>Det kan sgu være anstrengende at gå i gang med sin daglige feed-runde blot for at indse,
-                                        at alle lægger de fucking samme, forudsigelige billeder op. Heldigvis betyder det
-                                        bare, at du følger de forkerte – og det kan der jo rådes bod på.
-                                    </p>
-                                    <p class="rabtn">læs mere <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </p>
-                                </div>
-                            </a>
-                            <a class="featured-toggle col-lg-3 col-md-6 col-ls-12 col-xs-12" href="#" style="background-image: url('content/img/articles/break.jpeg')">
-                                <div class="featured-article-desc">
-                                    <h3>8 ting, der giver følelsen af solferie, når du ikke har råd til at tage af sted</h3>
-                                    <p>Det kan sgu være anstrengende at gå i gang med sin daglige feed-runde blot for at indse,
-                                        at alle lægger de fucking samme, forudsigelige billeder op. Heldigvis betyder det
-                                        bare, at du følger de forkerte – og det kan der jo rådes bod på.
-                                    </p>
-                                    <p class="rabtn">læs mere <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="footer">
                 <div class="container">
                     <div class="row">
@@ -340,12 +279,6 @@
             </div>
         </div>
     </div>
-
-    <script src="https://unpkg.com/vue"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
-
-    <script src="content/js/vueapp.js" charset="utf-8"></script>
 
     <script src="content/js/jquery-3.2.1.min.js" charset="utf-8"></script>
 
