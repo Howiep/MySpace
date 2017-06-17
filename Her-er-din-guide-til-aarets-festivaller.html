@@ -172,7 +172,12 @@
             <!--CONTENT START-->
             <div class="container story-wrapper">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li class="active">Her er din guide til årets festivaller</li>
+                        </ol>
                         <h1 class="">Her er din guide til årets festivaller</h1>
                         <h3 class="page-title">Sommeren er over os og med den bringer den sig et væld af kulturelle tilbud i form af festivaler
                             og udendørs aktiviteter.</h3>
@@ -180,12 +185,11 @@
 
                     <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
                         <div class=" main-storyimage">
-
                         </div>
                     </div>
 
 
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="col-lg-offset-1 col-lg-8 col-md-8 col-sm-12 col-xs-12">
                         <p class="article-desc ">Af: <a>Carina Kjær Rasmussen.</a> Foto: <a>PR</a></p>
 
                         <div class="article-body">
@@ -238,39 +242,29 @@
 
             <!--CONTENT END-->
 
+
             <div class="footer">
                 <div class="container">
-                    <div class="row">
-                        <a href="#" class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                            <img src="content/img/articles/love.jpg" alt="">
-                        </a>
-                        <a href="#" class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                            <img src="content/img/articles/taste.jpg" alt="">
-                        </a>
-                        <a href="#" class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                            <img src="content/img/articles/taste2.jpg" alt="">
-                        </a>
-                        <a href="#" class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                            <img src="content/img/articles/love.jpg" alt="">
-                        </a>
-                        <a href="#" class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                            <img src="content/img/articles/news.jpeg" alt="">
-                        </a>
-                        <a href="#" class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                            <img src="content/img/articles/break2.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="row newsletter">
-                        <div class="col-lg-6 col-md-6 text-right">
-                            <h2>Tilmeld dig vores nyhedsbrev!</h2>
+                    <div class="row footer-items">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+                            <img class="instaIcon" src="content/img/social/ig.png" alt="">
+                            <div id="instafeed"></div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
-                            <form class="navbar-form" role="button">
-                                <div class="form-group">
+                        <div class="newsletter col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+                            <h2>Tilmeld dig nyhedsbrevet!</h2>
+                            <form class="" role="button">
+                                <div class="newsletter-form">
+                                    <input type="text" class="form-control" placeholder="Navn">
                                     <input type="text" class="form-control" placeholder="Email">
+                                    <button type="Tilmeld" class="btn btn-danger">Tilmeld</button>
                                 </div>
-                                <button type="Tilmeld" class="btn btn-primary">Submit</button>
                             </form>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <p><a href="#">om os</a></p>
+                            <p> <a href="#">Kontakt</a></p>
+                            <p>Kompagnistræde 14D, 1. sal</p>
+                            <p>1208 København K.</p>
                         </div>
                     </div>
                 </div>
@@ -279,6 +273,7 @@
     </div>
 
     <script src="content/js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="content/js/instafeed.js" charset="utf-8"></script>
 
     <script src="content/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="content/js/main.js" charset="utf-8"></script>

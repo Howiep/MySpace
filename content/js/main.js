@@ -52,5 +52,10 @@ $(document).ready(function () {
         $this.css('margin-top', $this.parent().height() - $this.height())
     });
 
-
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '187419680',
+        accessToken: '187419680.1677ed0.cd9a2bda5940437597cf5ee41a97b8ac'
+    });
+    feed.run();
 })
