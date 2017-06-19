@@ -181,6 +181,7 @@
                         <h1 class="">Her er din guide til årets festivaller</h1>
                         <h3 class="page-title">Sommeren er over os og med den bringer den sig et væld af kulturelle tilbud i form af festivaler
                             og udendørs aktiviteter.</h3>
+                        <h4 class="article-category"><a href="#">Events</a> - <a href="#">My daily Culture</a></h4>
                     </div>
 
                     <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
@@ -239,6 +240,44 @@
                 </div>
             </div>
 
+            <div class="container">
+                <div class="recent">
+                    <!-- Vue app -->
+                    <div id="related" class="row">
+                        <div class="text-center">
+                            <h2 class="page-title">{{title}}</h2>
+                        </div>
+                        <div>
+                            <article v-for="post in posts" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="topic">
+                                    <a href="#">{{ post.category }}</a>
+                                    <a href="#" class="pull-right">{{ post.date }}</a>
+                                </div>
+                                <a href="Her-er-din-guide-til-aarets-festivaller.html">
+                                    <img class="img-responsive" :src="post.image" alt="">
+                                </a>
+                                <div class="item-text">
+                                    <h2 class="item-title">
+                                        <a href="Her-er-din-guide-til-aarets-festivaller.html">
+                                                      {{ post.title.substring(0, 45) }}
+                                                     </a>
+                                    </h2>
+
+                                    <p class="item-desc">
+                                        <a href="Her-er-din-guide-til-aarets-festivaller.html">
+                                                    {{ post.subtitle }}
+                                                    </a>
+                                    </p>
+                                    <p class="item-cta">
+                                        <a href="#">{{ post.author }}</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <!--CONTENT END-->
 
@@ -272,11 +311,18 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+
     <script src="content/js/jquery-3.2.1.min.js" charset="utf-8"></script>
     <script src="content/js/instafeed.js" charset="utf-8"></script>
 
     <script src="content/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="content/js/main.js" charset="utf-8"></script>
+
+    <script src="content/js/vueapp.js" charset="utf-8"></script>
+
 </body>
 
 </html>
